@@ -1,0 +1,64 @@
+<htmL>
+<head>
+	<link rel="stylesheet" type="text/css" href="world_map2.css"/>
+	<script type="text/javascript" src="world_map.js"></script>
+	<script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>  <!-- Angular JS -->
+	<title>World News Map</title>
+</head>
+<body onload="switchDivTwo(), findMarqueeWidth()">
+	
+	<header>
+		<input type="button" class="topbut" value="Headlines"/>
+		<input type="button" class="topbut" value="Sports"/>
+		<input type="button" class="topbut" value="Government"/>
+		<input type="button" class="topbut" value="Movies/TV"/>
+		<input type="button" class="topbut" value="Music"/>
+		<input type="button" class="topbut" value="Technology"/>
+		<input type="button" class="topbut" value="Food"/>
+	</header>
+	<div id="backgroundpic">
+		<div id="bodydiv">
+			<button id='na1' class='headline' onclick='toNorthAmerica1()'> Two police officers in Texas shot while responding to suicide call: police </button>
+			<button id='na2' class='headline' onclick='toNorthAmerica2()'> Hate drove gunman to shoot Philadelphia police: officials </button>
+			<button id='europe1' class='headline' onclick='toEurope1()'> Greece sends ship to house 1,000 migrants after Moria fire </button>
+			<button id='asia1' class='headline' onclick='toAsia1()'> India stabbing: Bystanders watch as Delhi woman killed </button>
+			<button id='sa1' class='headline' onclick='toSouthAmerica1()'> Cuba volleyball players jailed for rape in Finland </button>
+			<button id='af1' class='headline' onclick='toAfrica1()'> Somalia food crisis: 300,000 children need help, says UN </button>
+			<button id='aust1' class='headline' onclick='toAustralia1()'> Betoota Advocate takes small town news beyond Australia </button>
+
+		</div>
+
+		<div id="bodydiv2">
+		
+			<button id='na3' class='sports' onclick='toNorthAmerica3()'> Floyd Mayweather to 'move on' after trying to arrange Conor McGregor fight </button>
+			<button id='na4' class='headline' onclick='toNorthAmerica4()'> Chelsea Bombing Suspect Ahmad Khan Rahami Left Behind 'Rambling' Note </button>
+			<button id='europe2' class='headline' onclick='toEurope2()'> Calais death: Relatives of killed boy, 14, tell of his last moments </button>
+			<button id='asia2' class='headline' onclick='toAsia2()'> Asia Times – Asian news hub covering geo-political news and current affairs across Asia </button>
+			<button id='sa2' class='headline' onclick='toSouthAmerica2()'> Mexicans march for gay marriage after opponents rally </button>
+			<button id='af2' class='headline' onclick='toAfrica2()'> South Sudan's Kiir and Machar profited during war - report </button>
+			<button id='aust2' class='headline' onclick='toAustralia2()'> 'IS-inspired' Australian man charged with terrorism </button>
+		
+		</div>
+
+		<div id="contactdiv">
+			<a id="contact" href="contact_us.html"> Contact Us </a>
+			<p id="contact2"> Insert here</p>
+			<button onclick="findMarqueeWidth()"> Find width </button>
+		</div>
+
+	</div>
+	<footer class="marquee">
+		<div id="footerdiv">
+			<span class="bottom_headline">Nine prison staffers in Nebraska injured in altercation with inmates</span>
+			<span class="bottom_headline">&nbsp &nbsp &nbsp Special Report: How Delaware kept America safe for corporate secrecy</span>
+			<span class="bottom_headline">&nbsp &nbsp &nbsp Colombians celebrate as peace deal is reached with Farc rebels</span>
+			<span class="bottom_headline">&nbsp &nbsp &nbsp Italy earthquake: Aftershocks hamper rescue efforts</span>
+			<span class="bottom_headline">&nbsp &nbsp &nbsp Chinese embassy blast: Car bomb attack in Bishkek, Kyrgyzstan</span>
+			<span class="bottom_headline">&nbsp &nbsp &nbsp Kenya athletes angry at Rio shanty accommodation</span>
+			<span class="bottom_headline">&nbsp &nbsp &nbsp Kitten-sized extinct 'lion' named after David Attenborough</span>
+
+			<span id="marq_cont">&nbsp &nbsp &nbsp</span>
+		</div>
+	</footer>
+</body>
+</html>

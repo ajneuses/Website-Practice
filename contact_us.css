@@ -1,0 +1,10 @@
+table {
+	cell-padding: 5px;
+	cell-spacing: 10px;
+    position:center top;
+    background-color:transparent;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    font-size: 18;
+}

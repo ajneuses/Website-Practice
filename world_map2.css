@@ -1,0 +1,249 @@
+:root{
+    --footer-wid: 0px;
+    --window-wid: 0px;
+}
+header {
+    position: fixed;
+    background-color: transparent;
+    color:black;
+    text-align:left;
+    /*font-size: 32;*/
+    display: block;
+    margin-top: 0;
+    height: 7%;
+}
+#backgroundpic {
+    position: fixed;
+    background-image: url("worldmap.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: white;
+    top: 8%;
+    bottom:8.5%;
+    left:0%;
+    right:0%;
+}
+#bodydiv {
+    display: block;
+    position: fixed;
+    top: 8%;
+    bottom:8.5%;
+    left:0%;
+    right:0%;
+}
+#bodydiv2 {
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 8%;
+    bottom:8.5%;
+    left:0%;
+    right:0%;
+}
+.topbut {
+    height:100%;
+    float: left;
+    text-shadow: 1px 1px black;
+    background-color: #14D7C3;
+    font-size: 24;
+    padding: 10px 13px;
+    border: none;
+    transition-duration: 0.4s;
+    color: white;
+}
+.topbut:hover {
+    background-color: lightgreen;
+    font-size: 24;
+    border: none;
+    color: white;
+    padding: 10px 13px;
+}
+footer{
+    overflow: hidden;
+    position:fixed;
+    height:8%;
+    background-color:transparent;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    border-top: 1%;
+    border-top-style: solid;
+    border-color: #14D7C3;
+    text-align: center;
+}
+#footerdiv{
+    position: absolute;
+    font-size: 28;
+    top: 15%;
+    white-space: nowrap;
+    float: left;
+    animation: scroll_left 20s linear 0s infinite;
+    -webkit-animation: scroll_left 20s linear 0s infinite;
+    -moz-animation: scroll_left 45s linear 0s infinite;
+}
+.bottom_headline{
+    display: inline;
+}
+hr {
+    height: 2px;
+    background-color: #14D7C3;
+    color: #14D7C3;
+}
+#contactdiv {
+    position: fixed;
+    bottom: 9.8%;
+    right: 4px;
+}
+@keyframes scroll_left{
+   /* 0% {right:-400%;}
+    100% {right: 100%;}*/
+    0%{left: 100%}
+    100%{left: var(--footer-wid);}
+}
+@-webkit-keyframes scroll_left{
+    0%{left: 100%;}
+    100%{left: var(--footer-wid);}
+}
+@-moz-keyframes scroll_left{
+    0%{left: 100%;}
+    100%{left: var(--footer-wid);}
+}
+
+/* These are all buttons within the different sections of the page. They are named by the section they are under and
+ * numbered from top to bottom. So, an article of east North America would be 'ena_sa1' and one over South America would
+ * be named 'ena_sa2' because it is still within the ena_sa div section, but is underneath the other button.
+ * For the buttons that have the article names on them, orchid color will signify yahoo. Orange will be BBC.
+ */
+button.headline {
+    background-color: transparent;
+    font-size: 12;
+    padding: 10px 10px;
+    border: none;
+    transition-duration: 0.4s;
+    color: black;
+    /*text-shadow:
+    -1px -1px black,
+    1px -1px black,
+    -1px 1px black,
+    1px 1px black;*/
+}
+button.headline:hover {
+    background-color: orchid;
+    text-shadow: none;
+}
+button.sports{
+    background-color: transparent;
+    font-size: 12;
+    padding: 10px 10px;
+    border: none;
+    transition-duration: 0.4s;
+    color: black;
+    /*text-shadow:
+    1px 1px white,
+    1px -1px white,
+    -1px -1px white,
+    -1px 1px white;*/
+}
+button.sports:hover{
+    background-color: orange;
+    text-shadow: none;
+}
+#marq_cont{
+    height: 100%;
+    border: solid;
+    border-color:blue;
+}
+/*  These first seven buttons will be displayed initially and will fade after ~15 seconds to the next 
+ *  seven or so articles.
+ */
+
+#na1 {
+    position: fixed;
+    margin-left: 12%;
+    top: 20%;
+    width: 13%;
+}
+#na2 {
+    position: fixed;
+    margin-left: 27%;
+    margin-top: 10%;
+    width: 10%;
+}
+#europe1 {
+    position: fixed;
+    margin-left: 45%;
+    margin-top: 9%;
+    width: 10%;
+}
+#asia1 {
+    position: fixed;
+    margin-left: 65%;
+    margin-top: 12%;
+    width: 10%;
+}
+#sa1 {
+     position: fixed;
+    margin-left: 30%;
+    margin-top: 19%;
+    width: 10%;
+}
+#af1 {
+     position: fixed;
+    margin-left: 48%;
+    margin-top: 18%;
+    width: 10%;
+}
+#aust1 {
+    position: fixed;
+    margin-left: 75%;
+    margin-top: 25%;
+    width: 10%;
+} 
+
+/* These are the next page of buttons that don't appear until after the first buttons fade.
+ */
+#na3 {
+    position: fixed;
+    margin-left: 12%;
+    margin-top: 11%;
+    width: 10%;
+}
+
+#na4 {
+    position: fixed;
+    margin-left: 27%;
+    margin-top: 8%;
+    width: 10%;
+}
+#europe2 {
+    position: fixed;
+    margin-left: 42%;
+    margin-top: 8%;
+    width: 10%;
+}
+#asia2 {
+    position: fixed;
+    margin-left: 71%;
+    margin-top: 9%;
+    width: 10%;
+}
+#sa2 {
+     position: fixed;
+    margin-left: 30%;
+    margin-top: 19%;
+    width: 10%;
+}
+#af2 {
+     position: fixed;
+    margin-left: 48%;
+    margin-top: 18%;
+    width: 10%;
+}
+#aust2 {
+    position: fixed;
+    margin-left: 75%;
+    margin-top: 25%;
+    width: 10%;
+}
+
